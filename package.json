@@ -1,8 +1,7 @@
 {
   "name": "v-breadcrumbs",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "vuejs breadcrumbs library demo",
-  "private": true,
   "scripts": {
     "build": "webpack --config config/webpack.config.js"
   },

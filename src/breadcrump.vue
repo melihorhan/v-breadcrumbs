@@ -1,15 +1,9 @@
 <template>
   <ul class="breadcrumb">
-    <li>
-      <a href="#">Home</a>
+    <li v-for="item in items" :key="item.href">
+      <a v-show="item.href && item.href.length>0 && !item.actvie" :href="item.href">{{item.text}}</a>
+      <span v-show="item.active && item.active === true">{{item.text}}</span>
     </li>
-    <li>
-      <a href="#">Pictures</a>
-    </li>
-    <li>
-      <a href="#">Summer 15</a>
-    </li>
-    <li>Italy</li>
   </ul>
 </template>
 
